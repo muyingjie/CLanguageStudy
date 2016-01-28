@@ -23,3 +23,35 @@ int str2ip(unsigned char str[]){
 	*c = str[3];
 	return n;
 }
+//用指针求字符串长度
+int strLen(char str[]){
+	char *p=str;
+	int i = 0;
+	while(*p){
+		i++;
+		p++;
+	}
+	return i;
+}
+//将s2附加在s1后面
+void strConcat(char s1[], char s2[]){
+	char *p1=s1;
+	char *p2=s2;
+	int i=0;
+	int j=0;
+	while(*p1){
+		i++;
+		p1++;
+	}
+	//while(s2[j]){
+	//	s1[i]=s2[j];
+	//	j++;
+	//	i++;
+	//}
+	while(*p2){
+		*p1 = *p2;
+		p1++;
+		p2++;
+	}
+	//循环体里面的代码可以简写成*p1++ = *p2++
+}
