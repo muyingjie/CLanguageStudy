@@ -1,4 +1,5 @@
-BasicStudy/Project1.sdf
-BasicStudy/Project1.sln
-BasicStudy/Project1.v11.suo
+*.sdf
+*.sln
+*.v11.suo
+*.opensdf
 Debug/
