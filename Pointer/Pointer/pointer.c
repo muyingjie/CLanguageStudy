@@ -55,3 +55,17 @@ void strConcat(char s1[], char s2[]){
 	}
 	//循环体里面的代码可以简写成*p1++ = *p2++
 }
+//指针实现冒泡排序
+void bubble(int *arr, int len){
+	int i;
+	int j;
+	for(i=0;i<len;i++){
+		for(j=i+1;j<len;j++){
+			if(*(arr+i) < *(arr+j)){
+				int tmp=*(arr+i);
+				*(arr+i)=*(arr+j);
+				*(arr+j)=tmp;
+			}
+		}
+	}
+}

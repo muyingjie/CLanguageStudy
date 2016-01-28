@@ -21,10 +21,17 @@ int main(){
 	//char str[100]="abcdefg";
 	//printf("%d", strLen(str));
 
-	char str1[100]="abcdefg";
-	char str2[200]="hijklmn";
-	strConcat(str1, str2);
-	printf("%s",str1);
+	//char str1[100]="abcdefg";
+	//char str2[200]="hijklmn";
+	//strConcat(str1, str2);
+	//printf("%s",str1);
+
+	int arr[10]={3,12,54,23,7,26,88,12};
+	int i;
+	bubble(arr, 10);
+	for(i=0;i<10;i++){
+		printf("%d ",arr[i]);
+	}
 
 	getchar();
 	return 0;
