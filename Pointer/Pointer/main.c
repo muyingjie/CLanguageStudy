@@ -26,9 +26,16 @@ int main(){
 	//strConcat(str1, str2);
 	//printf("%s",str1);
 
-	int arr[10]={3,12,54,23,7,26,88,12};
+	//int arr[10]={3,12,54,23,7,26,88,12};
+	//int i;
+	//bubble(arr, 10);
+	//for(i=0;i<10;i++){
+	//	printf("%d ",arr[i]);
+	//}
+
+	int arr[10]={1,2,3,4,5,6,7,8,9,10};
 	int i;
-	bubble(arr, 10);
+	reverseArr(arr, 10);
 	for(i=0;i<10;i++){
 		printf("%d ",arr[i]);
 	}

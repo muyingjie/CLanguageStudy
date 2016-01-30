@@ -69,3 +69,13 @@ void bubble(int *arr, int len){
 		}
 	}
 }
+//Êı×éÄæÖÃ
+void reverseArr(int *arr,int len){
+	int i;
+	int tmpItem;
+	for(i=0;i<len/2;i++){
+		tmpItem = *(arr + i);
+		*(arr + i) = *(arr + len - i - 1);
+		*(arr + len - i - 1) = tmpItem;
+	}
+}
