@@ -1,3 +1,4 @@
+#include <string.h>
 //ip整数转字符串
 //ip地址事实上就是一个整数
 void ip2str(unsigned int n, unsigned char str[]){
@@ -100,4 +101,15 @@ int getSecondMaxItem(int *arr,int len){
 		}
 	}
 	return secondMax;
+}
+//通过指针逆置一个英文字符串
+void reverseEnglishString(char *str){
+	int len = strlen(str);
+	int i;
+	char c;
+	for(i=0;i<len/2;i++){
+		c = *(str + i);
+		*(str + i) = *(str + len - i - 1);
+		*(str + len - i - 1) = c;
+	}
 }

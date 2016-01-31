@@ -40,9 +40,13 @@ int main(){
 	//	printf("%d ",arr[i]);
 	//}
 
-	int arr[5]={2,3,4,11,8};
-	int secondMax = getSecondMaxItem(arr,5);
-	printf("%d",secondMax);
+	//int arr[5]={2,3,4,11,8};
+	//int secondMax = getSecondMaxItem(arr,5);
+	//printf("%d",secondMax);
+
+	char str[100] = "abcdefg";//定义成char *str="abcdefg";为什么不可以
+	reverseEnglishString(str);
+	printf("%s",str);
 
 	getchar();
 	return 0;
