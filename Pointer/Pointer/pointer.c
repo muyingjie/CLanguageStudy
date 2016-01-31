@@ -79,3 +79,25 @@ void reverseArr(int *arr,int len){
 		*(arr + len - i - 1) = tmpItem;
 	}
 }
+//求数组第二大元素
+int getSecondMaxItem(int *arr,int len){
+	int max = arr[0];
+	int secondMax = arr[1];
+	int tmp;
+	int i;
+	if(max < secondMax){
+		tmp = max;
+		max = secondMax;
+		secondMax = tmp;
+	}
+	for(i=2;i<len;i++){
+		if(arr[i]>max){
+			secondMax = max;
+			max = arr[i];
+		}
+		if(arr[i]>secondMax && arr[i]<max){
+			secondMax = arr[i];
+		}
+	}
+	return secondMax;
+}

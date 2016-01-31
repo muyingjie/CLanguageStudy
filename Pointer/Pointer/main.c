@@ -33,12 +33,16 @@ int main(){
 	//	printf("%d ",arr[i]);
 	//}
 
-	int arr[10]={1,2,3,4,5,6,7,8,9,10};
-	int i;
-	reverseArr(arr, 10);
-	for(i=0;i<10;i++){
-		printf("%d ",arr[i]);
-	}
+	//int arr[10]={1,2,3,4,5,6,7,8,9,10};
+	//int i;
+	//reverseArr(arr, 10);
+	//for(i=0;i<10;i++){
+	//	printf("%d ",arr[i]);
+	//}
+
+	int arr[5]={2,3,4,11,8};
+	int secondMax = getSecondMaxItem(arr,5);
+	printf("%d",secondMax);
 
 	getchar();
 	return 0;
