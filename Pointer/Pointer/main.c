@@ -45,6 +45,8 @@ int main(){
 	//printf("%d",secondMax);
 
 	char str[100] = "abcdefg";//定义成char *str="abcdefg";为什么不可以
+	//第一个是初始化了个数组，然后把给的字符串挨个当字符放数组里，最后元素加个\0，第二个常量区放个字符串，用一个指针指向常量区的空间。
+	//常量区空间没法再操作，所以不可以传入第二种形式
 	reverseEnglishString(str);
 	printf("%s",str);
 
