@@ -6,3 +6,4 @@ void bubble(int *arr,int len);
 void reverseArr(int *arr,int len);
 int getSecondMaxItem(int *arr,int len);
 void reverseEnglishString(char *str);
+void reverseChineseString(char *str);

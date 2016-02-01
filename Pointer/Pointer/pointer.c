@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 //ip整数转字符串
 //ip地址事实上就是一个整数
 void ip2str(unsigned int n, unsigned char str[]){
@@ -111,5 +112,20 @@ void reverseEnglishString(char *str){
 		c = *(str + i);
 		*(str + i) = *(str + len - i - 1);
 		*(str + len - i - 1) = c;
+	}
+}
+//通过指针逆置汉字字符串
+void reverseChineseString(char *str){
+	int len = strlen(str);
+	int i;
+	char tmp1;
+	char tmp2;
+	for(i=0;i<len;i+=2){
+		tmp1 = *(str + i);
+		tmp2 = *(str + i + 1);
+		*(str + i) = *(str + len - i - 2);
+		*(str + i + 1) = *(str + len - i - 1);
+		*(str + len - i - 2) = tmp1;
+		*(str + len - i - 1) = tmp2;
 	}
 }
