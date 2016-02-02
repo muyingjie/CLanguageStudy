@@ -51,9 +51,28 @@ int main(){
 	//reverseEnglishString(str);
 	//printf("%s",str);
 
-	char str[100] = "北京你好";
-	reverseChineseString(str);
-	printf("%s", str);
+	//char str[100] = "北京你好";
+	//reverseChineseString(str);
+	//printf("%s", str);
+
+	//char *a[10];
+	//printf("%d %d", sizeof(a), sizeof(a[0]));
+	//指针类型变量长度到底是4个字节还是8个字节是和编译器相关的
+	//VS中默认是32位的编译器，所以得到40 4
+
+	//指向二维数组的指针
+	int a[2][3] = {{1,2,3},{4,5,6}};
+	int (*p)[3];//指针p指向int[3]这种类型 二维数组里面的第一维的各项的值就是这种类型的
+	int i;
+	int j;
+	for(i=0;i<2;i++){
+		for(j=0;j<3;j++){
+			printf("%d",*(*(p+i)));
+			//p+i 是第i行的首地址
+			//*(p+i)是第i行第0个元素的地址
+			//*(*(p+i))是第i行第0个元素的值
+		}
+	}
 
 	getchar();
 	return 0;
