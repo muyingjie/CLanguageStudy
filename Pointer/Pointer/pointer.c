@@ -120,7 +120,7 @@ void reverseChineseString(char *str){
 	int i;
 	char tmp1;
 	char tmp2;
-	for(i=0;i<len;i+=2){
+	for(i=0;i<len/2;i+=2){
 		tmp1 = *(str + i);
 		tmp2 = *(str + i + 1);
 		*(str + i) = *(str + len - i - 2);
