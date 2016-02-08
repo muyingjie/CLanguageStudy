@@ -113,7 +113,7 @@ int main(){
 		for(j=0;j<3;j++){
 			colSum += *(*(p+j)+i);
 		}
-		printf("第%d行的和为%d\n", i ,colSum);
+		printf("第%d列的和为%d\n", i ,colSum);
 	}
 
 	getchar();
