@@ -77,13 +77,13 @@ int main(){
 	//}
 
 	//通过指针求二维数组每行每列的和
-	int a[3][2] = {{1,2},{3,4},{5,6}};
-	int (*p)[2] = a;
-
-	int i;
-	int j;
-	int rowSum = 0;
-	int colSum = 0;
+	//int a[3][2] = {{1,2},{3,4},{5,6}};
+	//int (*p)[2] = a;
+	//
+	//int i;
+	//int j;
+	//int rowSum = 0;
+	//int colSum = 0;
 	//先写出不用指针的方法
 	//for (i = 0; i < 3; i++){
 	//	rowSum = 0;
@@ -101,20 +101,23 @@ int main(){
 	//	printf("第%d列的和为%d\n", i, colSum);
 	//}
 	//再用指针的方法
-	for(i=0;i<3;i++){
-		rowSum = 0;
-		for(j=0;j<2;j++){
-			rowSum += *(*(p+i)+j);
-		}
-		printf("第%d行的和为%d\n", i, rowSum);
-	}
-	for(i=0;i<2;i++){
-		colSum = 0;
-		for(j=0;j<3;j++){
-			colSum += *(*(p+j)+i);
-		}
-		printf("第%d列的和为%d\n", i ,colSum);
-	}
+	//for(i=0;i<3;i++){
+	//	rowSum = 0;
+	//	for(j=0;j<2;j++){
+	//		rowSum += *(*(p+i)+j);
+	//	}
+	//	printf("第%d行的和为%d\n", i, rowSum);
+	//}
+	//for(i=0;i<2;i++){
+	//	colSum = 0;
+	//	for(j=0;j<3;j++){
+	//		colSum += *(*(p+j)+i);
+	//	}
+	//	printf("第%d列的和为%d\n", i ,colSum);
+	//}
+
+	int a[2][3]={{1,2,3},{4,5,6}};
+	transmitArgumentsOftwoDimensionArray(a,2,3);
 
 	getchar();
 	return 0;

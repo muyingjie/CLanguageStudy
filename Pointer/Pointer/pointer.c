@@ -129,3 +129,15 @@ void reverseChineseString(char *str){
 		*(str + len - i - 1) = tmp2;
 	}
 }
+//二维数组传参
+void transmitArgumentsOftwoDimensionArray(int (*p)[3],int firstDimensionLen,int secondDimensionLen){
+	int i;
+	int j;
+	for (i = 0; i < firstDimensionLen; i++)
+	{
+		for (j = 0; j < secondDimensionLen; j++)
+		{
+			printf("第%d行第%d列是%d\n",i,j,*(*(p+i)+j));
+		}
+	}
+}
