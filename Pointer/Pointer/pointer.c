@@ -141,3 +141,15 @@ void transmitArgumentsOftwoDimensionArray(int (*p)[3],int firstDimensionLen,int 
 		}
 	}
 }
+void mystrcat(char *s1,const char *s2){
+	int i = 0;
+	int j = 0;
+	int len = strlen(s2);
+	while(s1[i]){
+		i++;
+	}
+	for (j = 0; j < len; j++)
+	{
+		s1[i+j]=s2[j];
+	}
+}

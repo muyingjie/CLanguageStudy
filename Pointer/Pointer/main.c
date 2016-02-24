@@ -116,8 +116,13 @@ int main(){
 	//	printf("第%d列的和为%d\n", i ,colSum);
 	//}
 
-	int a[2][3]={{1,2,3},{4,5,6}};
-	transmitArgumentsOftwoDimensionArray(a,2,3);
+	//int a[2][3]={{1,2,3},{4,5,6}};
+	//transmitArgumentsOftwoDimensionArray(a,2,3);
+
+	char s1[100]={'a','b','c'};
+	char s2[100]={'d','e','f'};
+	mystrcat(s1,s2);
+	printf("%s",s1);
 
 	getchar();
 	return 0;
