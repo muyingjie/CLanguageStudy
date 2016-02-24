@@ -119,10 +119,14 @@ int main(){
 	//int a[2][3]={{1,2,3},{4,5,6}};
 	//transmitArgumentsOftwoDimensionArray(a,2,3);
 
-	char s1[100]={'a','b','c'};
-	char s2[100]={'d','e','f'};
-	mystrcat(s1,s2);
-	printf("%s",s1);
+	//char s1[100]={'a','b','c'};
+	//char s2[100]={'d','e','f'};
+	//mystrcat(s1,s2);
+	//printf("%s",s1);
+
+	char s1[100] = "abcdefghijklmn";
+	char *s2=mystrchr(s1,'d');
+	printf("%s",s2);
 
 	getchar();
 	return 0;

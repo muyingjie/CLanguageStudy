@@ -153,3 +153,14 @@ void mystrcat(char *s1,const char *s2){
 		s1[i+j]=s2[j];
 	}
 }
+//返回指定字符串后面的子串
+char *mystrchr(char *s,char c){
+	while(*s != 0){
+		if (*s == c)
+		{
+			return s;
+		}
+		s++;
+	}
+	return NULL;
+}
