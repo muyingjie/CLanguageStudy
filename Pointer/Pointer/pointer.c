@@ -164,3 +164,7 @@ char *mystrchr(char *s,char c){
 	}
 	return NULL;
 }
+//将指向函数的指针作为函数的参数
+int ope(int (*p)(int,int),int a,int b){
+	return p(a,b);
+}

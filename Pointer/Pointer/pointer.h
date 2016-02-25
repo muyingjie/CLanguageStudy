@@ -10,3 +10,4 @@ void reverseChineseString(char *str);
 void transmitArgumentsOftwoDimensionArray(int (*p)[3],int i,int j);
 void mystrcat(char *s1,const char *s2);
 char *mystrchr(char *s,char c);
+int ope(int (*p)(int,int),int a,int b);

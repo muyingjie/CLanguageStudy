@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "pointer.h"
+int add(int a,int b);
+int max(int a,int b);
 int main(){
 	//int a=10;
 	//指向常量的指针 *p不可以被修改
@@ -124,10 +126,35 @@ int main(){
 	//mystrcat(s1,s2);
 	//printf("%s",s1);
 
-	char s1[100] = "abcdefghijklmn";
-	char *s2=mystrchr(s1,'d');
-	printf("%s",s2);
+	//char s1[100] = "abcdefghijklmn";
+	//char *s2=mystrchr(s1,'d');
+	//printf("%s",s2);
+
+	//函数指针
+	//定义一个函数指针，指向有两个参数而且类型是整型，返回值也是整型的函数
+	//int (*p)(int,int);
+	//int i;
+	//int i2;
+	//p=add;
+	//i=p(1,2);
+	//printf("%d",i);
+	//p=max;
+	//i2=p(3,4);
+	//printf("%d",i2);
+
+	//int res;
+	//int res2;
+	//res = ope(add,3,5);
+	//printf("%d",res);
+	//res2 = ope(max,7,8);
+	//printf("%d",res2);
 
 	getchar();
 	return 0;
+}
+int add(int a,int b){
+	return a+b;
+}
+int max(int a,int b){
+	return a>b?a:b;
 }
