@@ -168,3 +168,10 @@ char *mystrchr(char *s,char c){
 int ope(int (*p)(int,int),int a,int b){
 	return p(a,b);
 }
+//字符指针作参数
+void print_str(char *c){
+	while(*(c++)){
+		printf("%c",*c);
+	}
+	printf("\n");
+}

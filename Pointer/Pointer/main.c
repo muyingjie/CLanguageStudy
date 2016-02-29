@@ -149,6 +149,11 @@ int main(){
 	//res2 = ope(max,7,8);
 	//printf("%d",res2);
 
+	char str[100]="abcdefg";
+	char *c=str;
+	c+=3;
+	print_str(c);
+
 	getchar();
 	return 0;
 }
