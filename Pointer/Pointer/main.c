@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "pointer.h"
-int add(int a,int b);
-int max(int a,int b);
+//引入stdlib库之后max函数报错，预计是stdlib库里面有对max的定义，因此将max改名为max1
+int add1(int a,int b);
+int max1(int a,int b);
+void getheap(int *p);
 int main(){
 	//int a=10;
 	//指向常量的指针 *p不可以被修改
@@ -149,17 +152,25 @@ int main(){
 	//res2 = ope(max,7,8);
 	//printf("%d",res2);
 
-	char str[100]="abcdefg";
-	char *c=str;
-	c+=3;
-	print_str(c);
+	//char str[100]="abcdefg";
+	//char *c=str;
+	//c+=3;
+	//print_str(c);
+
+	int *p=NULL;
+	getheap(p);
+	printf("%d",&p);
+	//p[0]=20; 程序会崩溃
 
 	getchar();
 	return 0;
 }
-int add(int a,int b){
+int add1(int a,int b){
 	return a+b;
 }
-int max(int a,int b){
+int max1(int a,int b){
 	return a>b?a:b;
+}
+void getheap(int *p){
+	p=malloc(sizeof(int)*100);
 }
